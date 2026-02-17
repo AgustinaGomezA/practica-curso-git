@@ -4,50 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi primera página</title>
+    <title>Mi Página</title>
+
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f6f9;
-            text-align: center;
-            padding: 50px;
-        }
-
-        h1 {
-            color: #2c3e50;
-        }
-
-        p {
-            color: #555;
-            font-size: 18px;
-        }
-
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #3498db;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
             color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+            text-align: center;
         }
 
+        a,
+        button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            background: white;
+            color: #764ba2;
+            font-weight: bold;
+            text-decoration: none;
+            cursor: pointer;
+            transition: .3s;
+        }
+
+        a:hover,
         button:hover {
-            background-color: #2980b9;
+            transform: scale(1.1);
         }
     </style>
 </head>
 
 <body>
 
-    <h1>Hola Mundo 🚀</h1>
-    <p>Este es mi primer archivo HTML en Visual Studio Code.</p>
+    <div>
+        <h1>Hola Mundo 🚀</h1>
+        <p>Mi primera web con enlace.</p>
 
-    <button onclick="saludar()">Haz clic aquí</button>
+        <button onclick="saludar()">Saludar</button>
+
+        <!-- Link para ir a otra página -->
+        <a href="https://www.google.com" target="_blank">Ir a Google</a>
+    </div>
 
     <script>
         function saludar() {
-            alert("¡Hola! Estás aprendiendo HTML 😎");
+            alert("¡Seguís aprendiendo! 😎");
         }
     </script>
 
